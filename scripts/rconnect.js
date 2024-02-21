@@ -1,3 +1,7 @@
+export function autocomplete(data, args) {
+    return [...data.servers];
+}
+
 function recursiveScan(ns, parent, server, target, route) {
 	const children = ns.scan(server);
 
